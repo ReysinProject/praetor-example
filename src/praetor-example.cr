@@ -1,5 +1,3 @@
-# TODO: Write documentation for `Praetor::Example`
-
 require "praetor"
 
 module PraetorExample
@@ -8,16 +6,19 @@ module PraetorExample
   # Example Product model
   class Product < Validation::Models::BaseModel
     string_field name, required: true
+    email_field email, required: true
   end
 
   # Usage examples
   begin
     # Create a new product with valid data
     product = Product.new(
-      name: "Example Product"
+      name: "Example Product",
+      email: "test@test.fr"
     )
 
-    puts "Product created successfully: #{product.name}"
+    puts "Product created successfully: #{product}"
+
   rescue e : Validation::ValidationError
     puts "Validation error: #{e.message}"
   end

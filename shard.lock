@@ -2,5 +2,5 @@ version: 2.0
 shards:
   praetor:
     git: https://github.com/reysinproject/praetor.git
-    version: 0.1.0+git.commit.a58b9e9a4402b5fe510c94a70e662e4d634a757a
+    version: 0.1.0+git.commit.120a6e665c2ccf53127f049642c13549c911ffaf
 
