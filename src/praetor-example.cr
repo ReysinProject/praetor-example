@@ -18,7 +18,6 @@ module PraetorExample
     )
 
     puts "Product created successfully: #{product}"
-
   rescue e : Validation::ValidationError
     puts "Validation error: #{e.message}"
   end
