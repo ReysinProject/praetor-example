@@ -1,0 +1,17 @@
+name: praetor-example
+version: 0.1.0
+
+authors:
+  - your-name-here <your-email-here>
+
+targets:
+  praetor-example:
+    main: src/praetor-example.cr
+
+crystal: '>= 1.15.1'
+
+license: MIT
+
+dependencies:
+  praetor:
+    github: ReysinProject/praetor
